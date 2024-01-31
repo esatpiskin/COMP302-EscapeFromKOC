@@ -1,0 +1,62 @@
+plugins {
+    id 'application'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(18)
+    }
+}
+
+
+sourceSets {
+
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['res']
+        }
+    }
+
+    test {
+        java.srcDirs = ['test']
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+
+    implementation 'org.mongodb:mongodb-driver-sync:4.8.2'
+    implementation 'com.intellij:forms_rt:7.0.3'
+
+
+}
+
+application {
+    mainClass = 'ui.form.MainForm'
+}
+
+jar {
+    manifest {
+        attributes(
+                "Main-Class": "ui.form.MainForm"
+        )
+    }
+
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.findAll {it.name.endsWith('jar')}.collect { zipTree(it) }
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

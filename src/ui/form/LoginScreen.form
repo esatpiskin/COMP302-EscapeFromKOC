@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.form.LoginScreen">
+  <grid id="27dc6" binding="LoginPanel" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="27" y="20" width="646" height="340"/>
+    </constraints>
+    <properties>
+      <alignmentX value="0.5"/>
+      <focusCycleRoot value="false"/>
+      <minimumSize width="500" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="dd150" class="javax.swing.JLabel" binding="usernameLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="76" height="65"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Username"/>
+        </properties>
+      </component>
+      <component id="31586" class="javax.swing.JTextField" binding="userNameTextField">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a93fe" class="javax.swing.JLabel" binding="passwordLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="76" height="54"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Password"/>
+        </properties>
+      </component>
+      <component id="81b8" class="javax.swing.JPasswordField" binding="passwordField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ddfeb" class="javax.swing.JButton" binding="loginButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="button-icons/loginIcon.png"/>
+          <label value=""/>
+          <rolloverIcon value="button-icons/loginSelected.png"/>
+          <rolloverSelectedIcon value="button-icons/loginSelected.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9655c" class="javax.swing.JButton" binding="registerButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="button-icons/registerIcon.png"/>
+          <label value=""/>
+          <rolloverIcon value="button-icons/registerSelected.png"/>
+          <rolloverSelectedIcon value="button-icons/registerSelected.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="60920" class="javax.swing.JButton" binding="helpButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="button-icons/helpIcon.png"/>
+          <label value=""/>
+          <rolloverIcon value="button-icons/helpIconSelected.png"/>
+          <rolloverSelectedIcon value="button-icons/helpIconSelected.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="537b2" class="javax.swing.JButton" binding="testButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <icon value="button-icons/testIcon.png"/>
+          <label value=""/>
+          <rolloverIcon value="button-icons/testSelected.png"/>
+          <rolloverSelectedIcon value="button-icons/testSelected.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

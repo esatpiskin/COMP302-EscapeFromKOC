@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.form.HelpScreen">
+  <grid id="27dc6" binding="helpScreen" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="2112" height="498"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="e231a" class="javax.swing.JButton" binding="closeButton">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Close"/>
+        </properties>
+      </component>
+      <component id="d87a3" class="javax.swing.JTextArea" binding="helpText">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <dragEnabled value="false"/>
+          <editable value="false"/>
+          <enabled value="true"/>
+          <text value="Hello Player! Welcome to our game. Here, you are going to understand how to play the game and the basic concepts for you to understand what is really going on.&#10;&#10;-Use arrow keys to walk inside the buildings&#10;-Press left click on objects to concur the key you need&#10;-You need to be near the object to successfully pick up the key&#10;-There are 3 types of Aliens in our game; Shooter Alien, Blind Alien and Time-Wasting Alien; encountering with these objects may cause either losing your life or lose the precious time you need.&#10;-You have 5 types of model.game.Powerups which are Extra time power-up, Hint, Protection Vest, Plastic Bottle and Extra Life. You can store these powerups in your bag for later use in the game. Each of these contents will give you the chance to fight against the Aliens&#10;-Game will be over if you lose all your lives or, hopefully, you find all the keys for all the buildings&#10;Have Fun!!!&#10;"/>
+          <wrapStyleWord value="true"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
